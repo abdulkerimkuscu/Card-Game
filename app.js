@@ -86,7 +86,7 @@ const clickCard = (e) => {
         }else {
             matches++;
             if(matches === 12) {
-                alert("WINNER");
+                alert("Kazandınız!");
             }
             firstPick = null;
             isPaused = false;
