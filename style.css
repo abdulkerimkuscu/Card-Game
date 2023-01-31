@@ -91,12 +91,21 @@ button {
 @media (max-width: 768px) {
     #game {
         display: grid;
-        grid-template-columns: repeat(3, 150px);
-        grid-template-rows: repeat(8,150px);
+        grid-template-columns: repeat(3, 115px);
+        grid-template-rows: repeat(8,115px);
         grid-gap: 5px;
     }
 
     h1{
-        font-size: 30px;
+        font-size: 20px;
     }
+
+    .back>h2 {
+        
+        font-size: 10px;
+    }
+    .back>img{
+        width: 80%;
+    }
+
 }
