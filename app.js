@@ -22,7 +22,7 @@ const colors = {
 
 const loadPokemon = async () => {
     const randomIds = new Set();
-    while (randomIds.size < 12) {
+    while (randomIds.size < 6) {
         const randomNumber = Math.ceil(Math.random() * 150);
         randomIds.add(randomNumber);
     }
@@ -85,7 +85,7 @@ const clickCard = (e) => {
             }, 500)    
         }else {
             matches++;
-            if(matches === 12) {
+            if(matches === 6) {
                 alert("Kazandınız!");
             }
             firstPick = null;
