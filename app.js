@@ -64,9 +64,6 @@ const displayPokemon = (pokemon) => {
 const clickCard = (e) => {
     const pokemonCard = e.currentTarget;
     const [front, back] = getFrontAndBackFromCard(pokemonCard)
-    if(front.classList.contains("rotated") || isPaused) {
-        return;
-    }
     isPaused = true;
     rotateElements([front, back]);
     if(!firstPick){
